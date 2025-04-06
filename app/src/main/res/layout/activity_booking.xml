@@ -4,23 +4,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context=".BookingActivity">
 
-    <TextView
-        android:id="@+id/lastBookingText"
-        android:layout_width="wrap_content"
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <Spinner
+        android:id="@+id/taxiSpinner"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Last booking will appear here"
-        android:textSize="18sp"
-        android:padding="16dp"/>
+        android:layout_margin="16dp"/>
 
     <Button
-        android:id="@+id/bookButton"
+        android:id="@+id/confirmBookingButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Book a Taxi"
-        android:onClick="onBookButtonClick"/>
+        android:layout_gravity="center"
+        android:text="Book Taxi" />
 
 </LinearLayout>
